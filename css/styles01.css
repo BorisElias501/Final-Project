@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     min-height: 100vh;
+     align-items: center;
+     justify-content: center;
+ }
+ /*------ Start navbar and landing section ------  */
+ .header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navbar {
+  padding: 10px 0;
+}
+.navbar-brand {
+  font-size: 1.8em;
+  font-weight: 600;
+  font-family: 'Kaushan Script', cursive;
+  
+}
+.navbar-dark .navbar-brand {
+  color: #00ff8c;
+}
+.nav-item {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  background: #dcdde1;
+  color: #262626;
+}
+.main {
+  position: relative;
+  background: url('../img/landing1.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 380px 0 200px;
+}
+.main h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.6em;
+  color: #dcdde1;
+  font-weight: bold;
+}
+.main p {
+  margin-top: 1em;
+  padding: 0;
+  font-size: 1em;
+  color: #dcdde1;
+}
+.main .btn {
+  background: #718093;
+  color: #fff;
+  border-radius: 15%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* ------ media queries ------ */
+@media(max-width: 768px){
+  .main{
+    padding: 200px 0;
+  }
+  .main h2 {
+    font-size: 2em;
+  }
+}
+ /* ------ End navbar and landing section ------ */
+ /* ----- Start gallery section ------ */
+  .color-bg {
+    background: #edf2f2;
+  }
+  #gallery h1:after {
+    content: '';
+    display: block;
+    background: black;
+    width: 150px;
+    margin: 10px auto;
+    height: 3px;
+  }
+  .gallery-text {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #gallery .col-lg-4 {
+    margin: 0 !important;
+    padding: 20px;
+  }
+  #gallery img {
+    width: 100%;
+    height: 260px;
+  }
+  #gallery img:hover {
+    border: 5px solid #f7f7f7;
+  }
+ /* ----- End gallery section ------ */
+ /* ----- Start services section ------ */
+ .services {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff !important;
+  padding-bottom: 60px;
+  background-attachment: fixed;
+  display: flex;
+  margin-bottom: -15px;
+}
+.serv {
+  margin: 30px;
+  padding-top: 45px;
+  text-align: center;
+}
+.serv-text {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 25px;
+}
+h1 {
+  font-family: arial;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.serv .serv-link {
+  text-decoration: none;
+  color: #fff;
+}
+.services h1:after {
+  content: '';
+  display: block;
+  background: white;
+  width: 200px;
+  margin: 10px auto;
+  height: 3px;
+}
+.p-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 14px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.services .col-md-4:hover {
+  box-shadow: 5px 7px 9px -3px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+ /* ------ End services section ------- */
+ /* ------ Start team section  ------- */ 
+ .team {
+   background: #edf2f2;
+   padding-top: 30px;
+   padding-bottom: 45px;
+ }
+ .team h1 {
+  font-size: 36px;
+  color: #555;
+  font-weight: bold;
+}
+ .team h1::after {
+  content: '';
+  display: block;
+  background: black;
+  width: 350px;
+  margin: 10px auto;
+  height: 3px;
+ }
+.team-text {
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 25px;
+}
+ .team .card-body h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+ .team .card-body h5 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+ .card-text {
+  font-weight: 700;
+}
+ .team img {
+  margin-bottom: 35px;
+  padding-top: 15px;
+}
+ .team i {
+  font-size: 26px;
+  color: #555;
+}
+ 
+.team .card {
+  border-radius: 0;
+  box-shadow: 5px 5px 15px #afc0c4;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+}
+
+ /* ------ End team section ---------- */
+ /* ------ Start footer section------- */
+ p {
+     color: #999;
+     line-height: 1.7;
+ }
+ h2, h3 {
+     font-size: 18px;
+     font-weight: 800;
+ }
+.footer-top {
+    background: #111;
+    padding: 50px 0;
+}
+.line-one h3 {
+    font-family: 'Poppins';
+    color: #00ff8c;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+.line-two h2 {
+    font-family: 'Poppins';
+    color: #00ff8c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.line-two ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .line-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+     
+  }
+  .line-two ul li a {
+    color: #999;
+    text-decoration: none;
+  }
+  .line-three h2 {
+    color: #00ff8c;
+    font-family: poppins;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .line-three li i {
+      color: #999;
+      font-size: 18px;
+      margin-top: 15px;
+      padding-top: 10px;
+  }
+  .line-four {
+      text-align: center;
+      margin-top: 8px;
+  }
+  .line-four a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      color: #00ff8c;
+      font-family: 'Kaushan Script', cursive;
+  }
+   
+  .line-five a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-left: 8px;
+  }
+  .line-five i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+  }
+  .footer-bottom {
+    background: #000;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  /*----- Landing page link ----- */
+  .jumbotron {
+    margin-top: 70px;
+    background-color: #79c8f2;
+    color: #3d5958;
+  }
+  .jumbotron h1 {
+    text-transform: uppercase;
+  }
+  .jumbotron p {
+    color: #3d5958;
+  }
+  .jumbotron a span {
+    font-weight: bold;
+  }
+  .main-art {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f7f7;
+    padding-top: 20px;
+  }
+  .post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+  }
+  .post-title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .post .post-title a {
+    color: #333;
+  } 
+  .post img {
+    width: 350px;
+    height: 300px;
+  }
+  .text-recent {
+    padding-top: 30px;
+  }
+ 
+/* ----- services1 page link ----  */
+.services1 {
+  margin-top: 70px;
+  margin-bottom: 0px;
+  background-color: #f5f7f7;
+  
+}
+.services1 h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.services1 .image {
+  width: 300px;
+  height: 260px;
+}
+.services1 .line-3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
