@@ -67,6 +67,14 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* ------ anima ----- */
+ #anima {
+   font-size: 20px;
+   font-weight: bold;
+   color: #fff;
+   font-family: 'Poppins', sans-serif;
+ }
 /* ------ media queries ------ */
 @media(max-width: 768px){
   .main{
@@ -364,6 +372,48 @@ h1 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+/* ----- buttons ------ */
+
+.comeback1 a {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.comeback2 a {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+} 
+
+/* ----- gallery2 -------  */
+
+ .wrapper {
+  background: #262626;
+}
+
+.caja {
+  width: 60%;
+  height: 80vh;
+  overflow: hidden;
+  margin: 5% auto;
+}
+
+#gallery2 img {
+  height: 400px;
+  width: 100%;
+}
+#photo img {
+  float: left;
+  border: 2px solid #fff;
+  height: 100px;
+  width: 20%;
+  opacity: .6;
+}
+
 
 
 
