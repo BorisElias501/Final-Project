@@ -1,5 +1,4 @@
-
-
+# My Photo Agency
 Hello.
 The website on which my project is based represents a photography agency.
 It has five sections in which we develop the different parts of the project such as:
