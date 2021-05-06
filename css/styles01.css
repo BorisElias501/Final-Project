@@ -76,12 +76,28 @@
    font-family: 'Poppins', sans-serif;
  }
 /* ------ media queries ------ */
+
 @media(max-width: 768px){
   .main{
     padding: 200px 0;
   }
   .main h2 {
     font-size: 2em;
+  }
+  .main p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 576px){
+  .main{
+    padding: 250px 0;
+  }
+  .main h2 {
+    font-size: 1.5em;
+  }
+  .main p {
+    font-size: 12px;
   }
 }
  /* ------ End navbar and landing section ------ */
